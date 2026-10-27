@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { Departamento } from '../../models/Departamento';
+import { Departamento } from '../../models/departamento';
 import { DepartamentosService } from '../../services/departamentos.service';
 
 @Component({

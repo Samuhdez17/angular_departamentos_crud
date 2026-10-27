@@ -4,11 +4,11 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Home } from './components/home/home';
 import { Menu } from './components/menu/menu';
-import { Departamentos } from './components/departamentos/departamento';
 import { DepartamentosService } from './services/departamentos.service';
+import { CrearDepartamento } from './components/crear-departamento/crear-departamento';
 
 @NgModule({
-  declarations: [App, Home, Menu, Departamentos],
+  declarations: [App, Home, Menu, CrearDepartamento],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners(), provideClientHydration(), DepartamentosService],
   bootstrap: [App],
