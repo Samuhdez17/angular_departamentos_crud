@@ -6,10 +6,11 @@ import { Home } from './components/home/home';
 import { Menu } from './components/menu/menu';
 import { DepartamentosService } from './services/departamentos.service';
 import { CrearDepartamento } from './components/crear-departamento/crear-departamento';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [App, Home, Menu, CrearDepartamento],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), provideClientHydration(), DepartamentosService],
   bootstrap: [App],
 })
